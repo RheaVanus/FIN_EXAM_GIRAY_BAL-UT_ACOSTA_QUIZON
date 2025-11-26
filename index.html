@@ -1,350 +1,350 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name</title>
-    <link rel="stylesheet" href="rsc/css/bootstrap.css">
-    <link rel="stylesheet" href="rsc/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="rsc/css/bootstrap.css"> 
+    <link rel="stylesheet" href="rsc/css/style.css"> 
+</head> <!-- End head --> 
+<body> <!-- Page body begins --> 
 
-    <nav class="navbar navbar-expand-md navbar-dark site-navbar">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-                <img src="media/logo.png" alt="Logo" class="navbar-brand-img me-2">
+    <nav class="navbar navbar-expand-md navbar-dark site-navbar"> <!-- Creation of navigation bar using Bootstrap classes --> 
+    <div class="container"> <!-- Bootstrap container to center and constrain navbar content --> 
+        <a class="navbar-brand" href="#"> <!-- This is a brand link (goes to top / placeholder) --> 
+                <img src="media/logo.png" alt="Logo" class="navbar-brand-img me-2"> <!-- Logo image next to brand text --> 
                 Your Name
-            </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            </a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"> <!-- Toggler for small screens --> 
+                    <span class="navbar-toggler-icon"></span> <!-- Icon for toggler --> 
+                </button> <!-- End toggler button --> 
 
 
-        <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#cinema">Cinema</a></li>
-            <li class="nav-item"><a class="nav-link" href="character.html">Characters</a></li>
-            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-        </ul>
-        </div>
-    </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="mainNav"> <!-- Collapsible nav content with id used by toggler --> 
+        <ul class="navbar-nav ms-auto"> <!-- Nav list aligned to the right using ms-auto --> 
+            <li class="nav-item"><a class="nav-link" href="#cinema">Cinema</a></li> <!-- Nav link to #cinema section --> 
+            <li class="nav-item"><a class="nav-link" href="character.html">Characters</a></li> <!-- Nav link to characters page --> 
+            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li> <!-- Nav link to products page --> 
+        </ul> <!-- End nav list --> 
+        </div> <!-- End collapse --> 
+    </div> <!-- End container --> 
+    </nav> <!-- End navbar --> 
 
-    <section class="fixed-background-container bg-dark" id="cinema">
-    <div class="container h-100 d-flex justify-content-center align-items-center">
-        <img src="media/logo.png" alt="Logo" class="img-fluid w-75 w-md-25">
-    </div>
-    </section>
+    <section class="fixed-background-container bg-dark" id="cinema"> <!-- Hero/fixed background section with dark background, id used by navbar --> 
+    <div class="container h-100 d-flex justify-content-center align-items-center"> <!-- Full height container centered both ways --> 
+        <img src="media/logo.png" alt="Logo" class="img-fluid w-75 w-md-25"> <!-- Centered hero logo image with responsive widths --> 
+    </div> <!-- End inner container --> 
+    </section> <!-- End hero section --> 
 
-    <section class="mini-vid">
-        <div class="card shadow-sm" style="width:320px;">
-            <div class="ratio ratio-16x9">
-                <video id="miniPlayer" class="w-100 h-100" playsinline muted preload="metadata" poster="media/mini-poster.jpg">
-                    <source src="media/Sparkle  Your Name AMV.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="card-body py-2 px-3 d-flex justify-content-between align-items-center">
-                <div class="small fw-semibold">Preview</div>
-                <div>
-                    <button id="miniToggle" class="btn btn-sm btn-outline-secondary">Play</button>
-                    <button id="miniClose" class="btn btn-sm btn-outline-danger ms-2">Close</button>
-                </div>
-                </div>
-            </div>
-    </section>
+    <section class="mini-vid"> <!-- Small preview video card section --> 
+        <div class="card shadow-sm" style="width:320px;"> <!-- Card container with shadow and fixed width --> 
+            <div class="ratio ratio-16x9"> <!-- Aspect-ratio wrapper for responsive video --> 
+                <video id="miniPlayer" class="w-100 h-100" playsinline muted preload="metadata" poster="media/mini-poster.jpg"> <!-- Video element for preview; muted and inline --> 
+                    <source src="media/Sparkle  Your Name AMV.mp4" type="video/mp4"> <!-- MP4 source file for the video --> 
+                </video> <!-- End video --> 
+            </div> <!-- End ratio wrapper --> 
+            <div class="card-body py-2 px-3 d-flex justify-content-between align-items-center"> <!-- Card body with controls layout --> 
+                <div class="small fw-semibold">Preview</div> <!-- Label text for the preview --> 
+                <div> <!-- Container for control buttons --> 
+                    <button id="miniToggle" class="btn btn-sm btn-outline-secondary">Play</button> <!-- Button to play/pause preview controlled by JS --> 
+                    <button id="miniClose" class="btn btn-sm btn-outline-danger ms-2">Close</button> <!-- Button to close/hide preview --> 
+                </div> <!-- End controls container --> 
+                </div> <!-- End card-body --> 
+            </div> <!-- End card --> 
+    </section> <!-- End mini-vid section --> 
 
-<section class="jayrome">
-  <div class="container py-5" id="card">
-    <div class="row align-items-center">
-      <!-- text column -->
-      <div class="col-12 col-md-6 order-1">
-        <h1 class="display-3 fw-bold text-light">Kimi No Nawa <br> (Your Name)</h1>
-        <p class="mt-3 fs-5 text-light">
-          <b>Director: Makoto Niitsu (新津 誠) or Makoto Shinkai (新海 誠)</b><br>
-          Studio: <b>CoMix Wave Films (株式会社コミックス・ウェーブ・フィルム)</b><br>
-          Release Date: <b>August 26, 2016</b><br>
-          Country: <b>Japan</b>
-        </p>
+<section class="jayrome"> <!-- Section with film summary styling class --> 
+  <div class="container py-5" id="card"> <!-- Container with vertical padding and id 'card' (used multiple times) --> 
+    <div class="row align-items-center"> <!-- Row aligning child columns vertically centered --> 
+      <!-- text column --> 
+      <div class="col-12 col-md-6 order-1"> <!-- Column that becomes half width on medium+ screens; order set --> 
+        <h1 class="display-3 fw-bold text-light">Kimi No Nawa <br> (Your Name)</h1> <!-- Main header with line break and styling --> 
+        <p class="mt-3 fs-5 text-light"> <!-- Paragraph for metadata with spacing and font size --> 
+          <b>Director: Makoto Niitsu (新津 誠) or Makoto Shinkai (新海 誠)</b><br> <!-- Bold director name and line break --> 
+          Studio: <b>CoMix Wave Films (株式会社コミックス・ウェーブ・フィルム)</b><br> <!-- Bold studio name and line break --> 
+          Release Date: <b>August 26, 2016</b><br> <!-- Release date info --> 
+          Country: <b>Japan</b> <!-- Country info --> 
+        </p> <!-- End metadata paragraph --> 
 
-        <hr class="w-50 thicks">
+        <hr class="w-50 thicks"> <!-- Decorative horizontal rule at half width using class 'thicks' --> 
 
-        <h2 class="display-5 fw-bold text-light">Description</h2>
-        <p class="mt-3 fs-6 text-light">Your Name is a 2016 Japanese animated romantic fantasy film written and directed by Makoto Shinkai, produced by CoMix Wave Films, 
-            and distributed by Toho. The first installment of what critics deem Shinkai's "disaster trilogy," whose three entries each share themes inspired by the frequency of natural disasters in Japan, 
+        <h2 class="display-5 fw-bold text-light">Description</h2> <!-- Section subheading --> 
+        <p class="mt-3 fs-6 text-light">Your Name is a 2016 Japanese animated romantic fantasy film written and directed by Makoto Shinkai, produced by CoMix Wave Films,  <!-- Film description paragraph continues --> 
+            and distributed by Toho. The first installment of what critics deem Shinkai's "disaster trilogy," whose three entries each share themes inspired by the frequency of natural disasters in Japan,  <!-- Description continued --> 
             it depicts the story of high school students Taki Tachibana and Mitsuha Miyamizu, who suddenly
-             begin to swap bodies despite having never met, unleashing chaos onto each other's lives.</p>
-      </div>
+             begin to swap bodies despite having never met, unleashing chaos onto each other's lives.</p> <!-- End description paragraph --> 
+      </div> <!-- End text column --> 
 
-      <!-- image column (right on md+) -->
-      <div class="col-12 col-md-6 order-2 text-center text-md-end">
-        <img src="media/yn1.jpg" alt="Scene" class="img-fluid rounded w-100 w-md-75">
-      </div>
-    </div>
-  </div>
-</section> 
+      <!-- image column (right on md+) --> 
+      <div class="col-12 col-md-6 order-2 text-center text-md-end"> <!-- Image column; responsive alignment --> 
+        <img src="media/yn1.jpg" alt="Scene" class="img-fluid rounded w-100 w-md-75"> <!-- Scene image responsive and rounded --> 
+      </div> <!-- End image column --> 
+    </div> <!-- End row --> 
+  </div> <!-- End container --> 
+</section>  <!-- End first content section --> 
 
-    <section class="jayrome">
-        <div class="container py-5" id="card">
-            <div class="row align-items-center">
-            <!-- image column: left on md+ -->
-            <div class="col-12 col-md-6 order-2 order-md-1 text-center text-md-start">
-                <img src="media/your-name3.png" alt="Scene" class="img-fluid rounded w-100 w-md-75">
-            </div>
+    <section class="jayrome"> <!-- Second feature section with same styling --> 
+        <div class="container py-5" id="card"> <!-- Container with padding and same id 'card' repeated (might be used for styling) --> 
+            <div class="row align-items-center"> <!-- Row aligning columns center vertically --> 
+            <!-- image column: left on md+ --> 
+            <div class="col-12 col-md-6 order-2 order-md-1 text-center text-md-start"> <!-- Image column ordering adjusted for responsive layout --> 
+                <img src="media/your-name3.png" alt="Scene" class="img-fluid rounded w-100 w-md-75"> <!-- Secondary image for the film --> 
+            </div> <!-- End image column --> 
 
-            <!-- text column: right on md+ -->
-            <div class="col-12 col-md-6 order-1 order-md-2">
-                <h2 class="display-3 fw-bold text-light">Sypnosis</h2>
-                <hr class="w-50 thicks">
-                <p class="text-light fs-5">
-                Mitsuha Miyamizu, a high school girl, yearns to live the life of a boy in the bustling city of Tokyo—a dream that stands 
-                in stark contrast to her present life in the countryside. Meanwhile in the city, Taki Tachibana lives a busy life as a high school student while juggling his part-time job and hopes for a future in architecture.
-                One day, Mitsuha awakens in a room that is not her own and suddenly finds herself living the dream life in Tokyo—but in Taki's body! Elsewhere, Taki finds himself living Mitsuha's life in the humble countryside.
-                In pursuit of an answer to this strange phenomenon, they begin to search for one another.
-                Kimi no Na wa. revolves around Mitsuha and Taki's actions, which begin to have a dramatic impact on each other's lives, weaving them into a fabric held together by fate and circumstance.
-                <br>
-                <br>
-                Genre : <b><i>Drama, Romance, School, Supernatural</i></b>
-            </p>
-        </div>
-        </div>
-    </div>
-    </section>
+            <!-- text column: right on md+ --> 
+            <div class="col-12 col-md-6 order-1 order-md-2"> <!-- Text column with responsive order --> 
+                <h2 class="display-3 fw-bold text-light">Sypnosis</h2> <!-- Section heading for synopsis (note: spelling 'Sypnosis') --> 
+                <hr class="w-50 thicks"> <!-- Decorative horizontal rule --> 
+                <p class="text-light fs-5"> <!-- Paragraph text for plot synopsis --> 
+                Mitsuha Miyamizu, a high school girl, yearns to live the life of a boy in the bustling city of Tokyo—a dream that stands  <!-- Beginning of synopsis text --> 
+                in stark contrast to her present life in the countryside. Meanwhile in the city, Taki Tachibana lives a busy life as a high school student while juggling his part-time job and hopes for a future in architecture. <!-- More synopsis --> 
+                One day, Mitsuha awakens in a room that is not her own and suddenly finds herself living the dream life in Tokyo—but in Taki's body! Elsewhere, Taki finds himself living Mitsuha's life in the humble countryside. <!-- More plot --> 
+                In pursuit of an answer to this strange phenomenon, they begin to search for one another. <!-- Plot continuation --> 
+                Kimi no Na wa. revolves around Mitsuha and Taki's actions, which begin to have a dramatic impact on each other's lives, weaving them into a fabric held together by fate and circumstance. <!-- More summary --> 
+                <br> <!-- Simple line break to separate content --> 
+                <br> <!-- Another line break for spacing --> 
+                Genre : <b><i>Drama, Romance, School, Supernatural</i></b> <!-- Bold italic genre list --> 
+            </p> <!-- End synopsis paragraph --> 
+        </div> <!-- End text column --> 
+        </div> <!-- End row --> 
+    </div> <!-- End container --> 
+    </section> <!-- End second section --> 
 
-    <section class="jayrome">
-    <div class="container py-5" id="card">
-        <div class="row align-items-center">
-        <!-- left: highlights -->
-            <div class="col-12 col-md-6 order-1 ps-3 ps-md-5">
-                <h2 class="display-3 fw-bold text-light">Highlights</h2>
-                    <hr class="w-50 thicks">
-                <ul class="list-group list-group-flush fs-5">
-                    <li class="list-group-item bg-transparent border-0 px-0 py-2 d-flex align-items-start">
-                        <span class="text-warning me-3 fs-4">★</span>
-                        <span class="text-light">Stunning visual animation by Makoto Shinkai</span>
-                    </li>
-                    <li class="list-group-item bg-transparent border-0 px-0 py-2 d-flex align-items-start">
-                        <span class="text-warning me-3 fs-4">★</span>
-                        <span class="text-light">Award-winning musical score by RADWIMPS</span>
-                    </li>
-                    <li class="list-group-item bg-transparent border-0 px-0 py-2 d-flex align-items-start">
-                        <span class="text-warning me-3 fs-4">★</span>
-                        <span class="text-light">Themes of fate, connection, love, and memory</span>
-                    </li>
-                    <li class="list-group-item bg-transparent border-0 px-0 py-2 d-flex align-items-start">
-                        <span class="text-warning me-3 fs-4">★</span>
-                        <span class="text-light">Emotional plot twist involving a comet disaster</span>
-                    </li>
-                    <li class="list-group-item bg-transparent border-0 px-0 py-2 d-flex align-items-start">
-                        <span class="text-warning me-3 fs-4">★</span>
-                        <span class="text-light">One of the highest-grossing anime films of all time</span>
-                    </li>
-                </ul>
-            </div>
-
-
-        <!-- image column (right on md+) -->
-        <div class="col-12 col-md-6 order-2 text-center text-md-end">
-            <video src="media/Your Name - Trailer [English Subtitled].mp4" alt="Scene" class="img-fluid rounded w-100 w-md-75" muted controls autoplay>
-        </div>
-        </div>
-    </div>
-    </section> 
-
-    <section class="voice-artists py-5">
-    <div class="container">
-        <div class="row mb-4">
-        <div class="col-12 text-center">
-            <h2 class="display-5 fw-bold text-light">Voice Artists</h2>
-            <p class="text-light">Main cast and supporting voice artists</p>
-        </div>
-        </div>
-
-        <div class="row g-4">
-        <div class="col-12 col-md-6">
-            <div class="artist-list">
-            <div class="artist d-flex align-items-start">
-                <div class="artist-avatar me-3"><img src="media/taki.jpg" alt="artist"></div>
-                <div><div class="artist-name">Ryûnosuke Kamiki</div><div class="artist-role">Taki Tachibana (voice)</div></div>
-            </div>
-
-            <div class="artist d-flex align-items-start">
-                <div class="artist-avatar me-3"><img src="media/Mitsuha.jpg" alt="artist"></div>
-                <div><div class="artist-name">Mone Kamishiraishi</div><div class="artist-role">Mitsuha Miyamizu</div></div>
-            </div>
-
-            <div class="artist d-flex align-items-start">
-                <div class="artist-avatar me-3"><img src="media/narita.jpg" alt="artist"></div>
-                <div><div class="artist-name">Ryo Narita</div><div class="artist-role">Katsuhiko Teshigawara (voice)</div></div>
-            </div>
-
-            <div class="artist d-flex align-items-start">
-                <div class="artist-avatar me-3"><img src="media/nobunaga.jpg" alt="artist"></div>
-                <div><div class="artist-name">Nobunaga Shimazaki</div><div class="artist-role">Tsukasa Fujii (voice)</div></div>
-            </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-            <div class="artist-list">
-            <div class="artist d-flex align-items-start">
-                <div class="artist-avatar me-3"><img src="media/kanon.jpg" alt="artist"></div>
-                <div><div class="artist-name">Kanon Tani</div><div class="artist-role">Yotsuha Miyamizu (voice)</div></div>
-            </div>
-
-            <div class="artist d-flex align-items-start">
-                <div class="artist-avatar me-3"><img src="media/aoi.jpg" alt="artist"></div>
-                <div><div class="artist-name">Aoi Yûki</div><div class="artist-role">Sayaka Natori (voice)</div></div>
-            </div>
-
-            <div class="artist d-flex align-items-start">
-                <div class="artist-avatar me-3"><img src="media/nagasawa.jpg" alt="artist"></div>
-                <div><div class="artist-name">Miki Okudera</div><div class="artist-role">Masami Nagasawa (voice)</div></div>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    </section>
-
-    <section class="cinema-section py-5">
-    <div class="container">
-        <!-- header / badges -->
-        <div class="row align-items-center mb-4">
-        <div class="col-md-8">
-            <h2 class="display-5 fw-bold text-light">Available Cinema</h2>
-            <div class="d-flex flex-wrap gap-2 mt-2">
-            <span class="badge cinema-badge">SM Aura Premier</span>
-            <span class="badge cinema-badge">SM Mall of Asia</span>
-            <span class="badge cinema-badge">SM City Cebu</span>
-            <span class="badge cinema-badge">SM City Butuan</span>
-            <span class="badge cinema-badge">Ayala Mall Cinemas</span>
-            <span class="badge cinema-badge">Robinsons Movieworld</span>
-
-            </div>
-        </div>
-        </div>
-
-        <!-- main content: left video, right crew -->
-        <div class="row g-4">
-        <div class="col-12 col-lg-8">
-            <div class="card border-0 bg-transparent cinema-media p-0">
-            <div class="ratio ratio-16x9 rounded overflow-hidden shadow-lg">
-                <video controls muted playsinline poster="media/hero-poster.jpg">
-                <source src="media/Visuals - Your Name (4K).mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-            </div>
-
-            <div class="mt-3 text-light">
-                <h3 class="h5 mb-1">Now showing • Kimi No Nawa (Your Name)</h3>
-                <p class="mb-0 small text-light">Available in selected SM Cinemas — check showtimes and seats.</p>
-            </div>
-            </div>
-        </div>
-
-    <div class="col-12 col-lg-4">
-    <div class="crew-panel p-3 rounded shadow-sm">
-        <h3 class="h4 fw-bold mb-3 text-light">CREW</h3>
-
-        <div class="crew-list overflow-auto" style="height:520px;">
-        <div class="crew-item d-flex align-items-center py-3">
-            <img src="media/shinkai.jpg" alt="avatar" class="rounded-circle me-3 crew-avatar">
-            <div class="flex-grow-1 text-end">
-            <div class="crew-name fw-bold text-light">Makoto Shinkai</div>
-            <div class="crew-role  small text-light">Director</div>
-            </div>
-        </div>
-
-        <div class="crew-item d-flex align-items-center py-3">
-            <img src="media/ito.jpg" alt="avatar" class="rounded-circle me-3 crew-avatar">
-            <div class="flex-grow-1 text-end">
-            <div class="crew-name fw-bold text-light">Kōichirō Itō</div>
-            <div class="crew-role small text-light">Producer</div>
-            </div>
-        </div>
-
-        <div class="crew-item d-flex align-items-center py-3">
-            <img src="media/missing.png" alt="avatar" class="rounded-circle me-3 crew-avatar">
-            <div class="flex-grow-1 text-end">
-            <div class="crew-name fw-bold text-light">Katsuhiro Takeia</div>
-            <div class="crew-role small text-light">Producer</div>
-            </div>
-        </div>
-
-        <div class="crew-item d-flex align-items-center py-3">
-            <img src="media/shinkai.jpg" alt="avatar" class="rounded-circle me-3 crew-avatar">
-            <div class="flex-grow-1 text-end">
-            <div class="crew-name fw-bold text-light">Makoto Shinkai</div>
-            <div class="crew-role small text-light">Writer</div>
-            </div>
-        </div>
-
-        <div class="crew-item d-flex align-items-center py-3">
-            <img src="media/shinkai.jpg" alt="avatar" class="rounded-circle me-3 crew-avatar">
-            <div class="flex-grow-1 text-end">
-            <div class="crew-name fw-bold text-light">Makoto Shinkai</div>
-            <div class="crew-role  small text-light">Screenplay</div>
-            </div>
-        </div>
-
-        <div class="crew-item d-flex align-items-center py-3">
-            <img src="media/rad.jpg" alt="avatar" class="rounded-circle me-3 crew-avatar">
-            <div class="flex-grow-1 text-end">
-            <div class="crew-name fw-bold text-light">RADWIMPS</div>
-            <div class="crew-role  small text-light">Music</div>
-            </div>
-        </div>
-        </div>
-    </div>
-    </div>
-    </section>
-
-    <footer class="bg-dark text-light pt-5 pb-3">
-    <div class="container">
-        <div class="row text-center text-md-start">
-
-        <!-- Column 1 -->
-        <div class="col-md-4 mb-4">
-            <img src="media/logo.png" alt="Logo" class="img-fluid mb-2 w-75">
-            <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-2">
-            <a href="#"><i class="bi bi-facebook fs-4 text-light"></i></a>
-            <a href="#"><i class="bi bi-instagram fs-4 text-light"></i></a>
-            <a href="#"><i class="bi bi-twitter fs-4 text-light"></i></a>
-            </div>
-        </div>
-
-        <!-- Column 2 -->
-        <div class="col-md-4 mb-4">
-            <h5 class="fw-bold">Developed By:</h5>
-                <ul class="list-unstyled mt-2">
-                    <li>GIRAY JEROME V.</li>
-                    <li>QUIZON FR P.</li>
-                    <li>ACOSTA, RJAY LUIS</li>
-                    <li>BAL-UT JETRO</li>
-                </ul>
-        </div>
-
-        <!-- Column 3 -->
-        <div class="col-md-4 mb-4">
-            <h5 class="fw-bold">Quick Links</h5>
-                <ul class="list-unstyled mt-2">
-                    <li><a href="#cinema" class="footer-link">Cinema</a></li>
-                    <li><a href="character.html" class="footer-link">Characters</a></li>
-                    <li><a href="products.html" class="footer-link">Products</a></li>
-                </ul>
-        </div>
-
-        </div>
-
-        <div class="text-center mt-4 text-light">
-        <small>© 2025 Your Website. All Rights Reserved.</small>
-        </div>
-    </div>
-    </footer>
+    <section class="jayrome"> <!-- Highlights section using same layout class --> 
+    <div class="container py-5" id="card"> <!-- Container repeated with id 'card' --> 
+        <div class="row align-items-center"> <!-- Row for columns --> 
+        <!-- left: highlights --> 
+            <div class="col-12 col-md-6 order-1 ps-3 ps-md-5"> <!-- Left column with padding start on md+ --> 
+                <h2 class="display-3 fw-bold text-light">Highlights</h2> <!-- Highlights heading --> 
+                    <hr class="w-50 thicks"> <!-- Small hr under heading --> 
+                <ul class="list-group list-group-flush fs-5"> <!-- List group for highlight items --> 
+                    <li class="list-group-item bg-transparent border-0 px-0 py-2 d-flex align-items-start"> <!-- Item 1 container with layout classes --> 
+                        <span class="text-warning me-3 fs-4">★</span> <!-- Decorative star icon using text --> 
+                        <span class="text-light">Stunning visual animation by Makoto Shinkai</span> <!-- Highlight text --> 
+                    </li> <!-- End item 1 --> 
+                    <li class="list-group-item bg-transparent border-0 px-0 py-2 d-flex align-items-start"> <!-- Item 2 --> 
+                        <span class="text-warning me-3 fs-4">★</span> <!-- Star icon --> 
+                        <span class="text-light">Award-winning musical score by RADWIMPS</span> <!-- Highlight text --> 
+                    </li> <!-- End item 2 --> 
+                    <li class="list-group-item bg-transparent border-0 px-0 py-2 d-flex align-items-start"> <!-- Item 3 --> 
+                        <span class="text-warning me-3 fs-4">★</span> <!-- Icon --> 
+                        <span class="text-light">Themes of fate, connection, love, and memory</span> <!-- Highlight text --> 
+                    </li> <!-- End item 3 --> 
+                    <li class="list-group-item bg-transparent border-0 px-0 py-2 d-flex align-items-start"> <!-- Item 4 --> 
+                        <span class="text-warning me-3 fs-4">★</span> <!-- Icon --> 
+                        <span class="text-light">Emotional plot twist involving a comet disaster</span> <!-- Highlight text --> 
+                    </li> <!-- End item 4 --> 
+                    <li class="list-group-item bg-transparent border-0 px-0 py-2 d-flex align-items-start"> <!-- Item 5 --> 
+                        <span class="text-warning me-3 fs-4">★</span> <!-- Icon --> 
+                        <span class="text-light">One of the highest-grossing anime films of all time</span> <!-- Highlight text --> 
+                    </li> <!-- End item 5 --> 
+                </ul> <!-- End highlights list --> 
+            </div> <!-- End left column --> 
 
 
+        <!-- image column (right on md+) --> 
+        <div class="col-12 col-md-6 order-2 text-center text-md-end"> <!-- Right column for media --> 
+            <video src="media/Your Name - Trailer [English Subtitled].mp4" alt="Scene" class="img-fluid rounded w-100 w-md-75" muted controls autoplay> <!-- Video element embedded as media for highlight section (src attribute used) --> 
+        </div> <!-- End right column --> 
+        </div> <!-- End row --> 
+    </div> <!-- End container --> 
+    </section>  <!-- End highlights section --> 
 
-<script src="rsc/js/bootstrap.min.js"></script>
-<script src="rsc/js/script.js"></script>
-</body>
-</html>
+    <section class="voice-artists py-5"> <!-- Voice artists / cast section with padding --> 
+    <div class="container"> <!-- Container start --> 
+        <div class="row mb-4"> <!-- Row for section header with bottom margin --> 
+        <div class="col-12 text-center"> <!-- Centered header column --> 
+            <h2 class="display-5 fw-bold text-light">Voice Artists</h2> <!-- Header title --> 
+            <p class="text-light">Main cast and supporting voice artists</p> <!-- Short description --> 
+        </div> <!-- End header column --> 
+        </div> <!-- End row --> 
+
+        <div class="row g-4"> <!-- Grid row with gap between columns --> 
+        <div class="col-12 col-md-6"> <!-- Column for first half of cast list --> 
+            <div class="artist-list"> <!-- Custom container for artist entries --> 
+            <div class="artist d-flex align-items-start"> <!-- Single artist item layout --> 
+                <div class="artist-avatar me-3"><img src="media/taki.jpg" alt="artist"></div> <!-- Avatar image for actor --> 
+                <div><div class="artist-name">Ryûnosuke Kamiki</div><div class="artist-role">Taki Tachibana (voice)</div></div> <!-- Name and role --> 
+            </div> <!-- End artist item --> 
+
+            <div class="artist d-flex align-items-start"> <!-- Next artist --> 
+                <div class="artist-avatar me-3"><img src="media/Mitsuha.jpg" alt="artist"></div> <!-- Avatar image --> 
+                <div><div class="artist-name">Mone Kamishiraishi</div><div class="artist-role">Mitsuha Miyamizu</div></div> <!-- Name & role --> 
+            </div> <!-- End artist --> 
+
+            <div class="artist d-flex align-items-start"> <!-- Next artist --> 
+                <div class="artist-avatar me-3"><img src="media/narita.jpg" alt="artist"></div> <!-- Avatar --> 
+                <div><div class="artist-name">Ryo Narita</div><div class="artist-role">Katsuhiko Teshigawara (voice)</div></div> <!-- Name & role --> 
+            </div> <!-- End artist --> 
+
+            <div class="artist d-flex align-items-start"> <!-- Next artist --> 
+                <div class="artist-avatar me-3"><img src="media/nobunaga.jpg" alt="artist"></div> <!-- Avatar --> 
+                <div><div class="artist-name">Nobunaga Shimazaki</div><div class="artist-role">Tsukasa Fujii (voice)</div></div> <!-- Name & role --> 
+            </div> <!-- End artist --> 
+            </div> <!-- End artist-list --> 
+        </div> <!-- End column --> 
+
+        <div class="col-12 col-md-6"> <!-- Second column for more cast --> 
+            <div class="artist-list"> <!-- Container for additional artists --> 
+            <div class="artist d-flex align-items-start"> <!-- Artist item --> 
+                <div class="artist-avatar me-3"><img src="media/kanon.jpg" alt="artist"></div> <!-- Avatar image --> 
+                <div><div class="artist-name">Kanon Tani</div><div class="artist-role">Yotsuha Miyamizu (voice)</div></div> <!-- Name & role --> 
+            </div> <!-- End artist --> 
+
+            <div class="artist d-flex align-items-start"> <!-- Artist item --> 
+                <div class="artist-avatar me-3"><img src="media/aoi.jpg" alt="artist"></div> <!-- Avatar image --> 
+                <div><div class="artist-name">Aoi Yûki</div><div class="artist-role">Sayaka Natori (voice)</div></div> <!-- Name & role --> 
+            </div> <!-- End artist --> 
+
+            <div class="artist d-flex align-items-start"> <!-- Artist item --> 
+                <div class="artist-avatar me-3"><img src="media/nagasawa.jpg" alt="artist"></div> <!-- Avatar image --> 
+                <div><div class="artist-name">Miki Okudera</div><div class="artist-role">Masami Nagasawa (voice)</div></div> <!-- Name & role --> 
+            </div> <!-- End artist --> 
+            </div> <!-- End artist-list --> 
+        </div> <!-- End column --> 
+        </div> <!-- End row --> 
+    </div> <!-- End container --> 
+    </section> <!-- End voice-artists section --> 
+
+    <section class="cinema-section py-5"> <!-- Cinema availability and main media section --> 
+    <div class="container"> <!-- Container start --> 
+        <!-- header / badges --> 
+        <div class="row align-items-center mb-4"> <!-- Row for header and badges --> 
+        <div class="col-md-8"> <!-- Column for title and badges --> 
+            <h2 class="display-5 fw-bold text-light">Available Cinema</h2> <!-- Section title --> 
+            <div class="d-flex flex-wrap gap-2 mt-2"> <!-- Flex container for badges with wrap --> 
+            <span class="badge cinema-badge">SM Aura Premier</span> <!-- Cinema badge 1 --> 
+            <span class="badge cinema-badge">SM Mall of Asia</span> <!-- Cinema badge 2 --> 
+            <span class="badge cinema-badge">SM City Cebu</span> <!-- Cinema badge 3 --> 
+            <span class="badge cinema-badge">SM City Butuan</span> <!-- Cinema badge 4 --> 
+            <span class="badge cinema-badge">Ayala Mall Cinemas</span> <!-- Cinema badge 5 --> 
+            <span class="badge cinema-badge">Robinsons Movieworld</span> <!-- Cinema badge 6 --> 
+
+            </div> <!-- End badges flex --> 
+        </div> <!-- End column --> 
+        </div> <!-- End header row --> 
+
+        <!-- main content: left video, right crew --> 
+        <div class="row g-4"> <!-- Main grid row with gap --> 
+        <div class="col-12 col-lg-8"> <!-- Left large column for main video --> 
+            <div class="card border-0 bg-transparent cinema-media p-0"> <!-- Card container for media --> 
+            <div class="ratio ratio-16x9 rounded overflow-hidden shadow-lg"> <!-- Responsive video wrapper with shadow --> 
+                <video controls muted playsinline poster="media/hero-poster.jpg"> <!-- Main hero video with controls and poster --> 
+                <source src="media/Visuals - Your Name (4K).mp4" type="video/mp4"> <!-- Source file for hero video --> 
+                Your browser does not support the video tag. <!-- Fallback text if <video> unsupported --> 
+                </video> <!-- End hero video --> 
+            </div> <!-- End ratio wrapper --> 
+
+            <div class="mt-3 text-light"> <!-- Text block below media --> 
+                <h3 class="h5 mb-1">Now showing • Kimi No Nawa (Your Name)</h3> <!-- Small heading for showing info --> 
+                <p class="mb-0 small text-light">Available in selected SM Cinemas — check showtimes and seats.</p> <!-- Additional info copy --> 
+            </div> <!-- End text block --> 
+            </div> <!-- End card --> 
+        </div> <!-- End left column --> 
+
+    <div class="col-12 col-lg-4"> <!-- Right column for crew panel --> 
+    <div class="crew-panel p-3 rounded shadow-sm"> <!-- Crew panel with padding and shadow --> 
+        <h3 class="h4 fw-bold mb-3 text-light">CREW</h3> <!-- Crew header --> 
+
+        <div class="crew-list overflow-auto" style="height:520px;"> <!-- Scrollable list container with fixed height --> 
+        <div class="crew-item d-flex align-items-center py-3"> <!-- Crew item: director --> 
+            <img src="media/shinkai.jpg" alt="avatar" class="rounded-circle me-3 crew-avatar"> <!-- Avatar for director --> 
+            <div class="flex-grow-1 text-end"> <!-- Text container grows and aligns to right --> 
+            <div class="crew-name fw-bold text-light">Makoto Shinkai</div> <!-- Crew name --> 
+            <div class="crew-role  small text-light">Director</div> <!-- Role text --> 
+            </div> <!-- End text container --> 
+        </div> <!-- End crew item --> 
+
+        <div class="crew-item d-flex align-items-center py-3"> <!-- Producer item --> 
+            <img src="media/ito.jpg" alt="avatar" class="rounded-circle me-3 crew-avatar"> <!-- Avatar image --> 
+            <div class="flex-grow-1 text-end"> <!-- Text container --> 
+            <div class="crew-name fw-bold text-light">Kōichirō Itō</div> <!-- Crew name --> 
+            <div class="crew-role small text-light">Producer</div> <!-- Role --> 
+            </div> <!-- End text container --> 
+        </div> <!-- End crew item --> 
+
+        <div class="crew-item d-flex align-items-center py-3"> <!-- Producer 2 (missing image placeholder) --> 
+            <img src="media/missing.png" alt="avatar" class="rounded-circle me-3 crew-avatar"> <!-- Placeholder avatar for missing image --> 
+            <div class="flex-grow-1 text-end"> <!-- Text container --> 
+            <div class="crew-name fw-bold text-light">Katsuhiro Takeia</div> <!-- Crew name (possible typo in surname) --> 
+            <div class="crew-role small text-light">Producer</div> <!-- Role --> 
+            </div> <!-- End text container --> 
+        </div> <!-- End crew item --> 
+
+        <div class="crew-item d-flex align-items-center py-3"> <!-- Writer entry (repeated image) --> 
+            <img src="media/shinkai.jpg" alt="avatar" class="rounded-circle me-3 crew-avatar"> <!-- Avatar for writer (same image) --> 
+            <div class="flex-grow-1 text-end"> <!-- Text container --> 
+            <div class="crew-name fw-bold text-light">Makoto Shinkai</div> <!-- Crew name --> 
+            <div class="crew-role small text-light">Writer</div> <!-- Role --> 
+            </div> <!-- End text container --> 
+        </div> <!-- End crew item --> 
+
+        <div class="crew-item d-flex align-items-center py-3"> <!-- Screenplay entry (also Shinkai) --> 
+            <img src="media/shinkai.jpg" alt="avatar" class="rounded-circle me-3 crew-avatar"> <!-- Avatar reused --> 
+            <div class="flex-grow-1 text-end"> <!-- Text container --> 
+            <div class="crew-name fw-bold text-light">Makoto Shinkai</div> <!-- Crew name --> 
+            <div class="crew-role  small text-light">Screenplay</div> <!-- Role --> 
+            </div> <!-- End text container --> 
+        </div> <!-- End crew item --> 
+
+        <div class="crew-item d-flex align-items-center py-3"> <!-- Music credit entry --> 
+            <img src="media/rad.jpg" alt="avatar" class="rounded-circle me-3 crew-avatar"> <!-- Avatar for music group --> 
+            <div class="flex-grow-1 text-end"> <!-- Text container --> 
+            <div class="crew-name fw-bold text-light">RADWIMPS</div> <!-- Music artist credit name --> 
+            <div class="crew-role  small text-light">Music</div> <!-- Role --> 
+            </div> <!-- End text container --> 
+        </div> <!-- End crew item --> 
+        </div> <!-- End crew-list --> 
+    </div> <!-- End crew-panel --> 
+    </div> <!-- End right column --> 
+    </section> <!-- End cinema section --> 
+
+    <footer class="bg-dark text-light pt-5 pb-3"> <!-- Footer with dark background and padding --> 
+    <div class="container"> <!-- Footer container --> 
+        <div class="row text-center text-md-start"> <!-- Row with responsive text alignment --> 
+
+        <!-- Column 1 --> 
+        <div class="col-md-4 mb-4"> <!-- Footer column for logo and social icons --> 
+            <img src="media/logo.png" alt="Logo" class="img-fluid mb-2 w-75"> <!-- Footer logo image --> 
+            <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-2"> <!-- Social icon container with responsive justification --> 
+            <a href="#"><i class="bi bi-facebook fs-4 text-light"></i></a> <!-- Facebook icon link placeholder --> 
+            <a href="#"><i class="bi bi-instagram fs-4 text-light"></i></a> <!-- Instagram icon link placeholder --> 
+            <a href="#"><i class="bi bi-twitter fs-4 text-light"></i></a> <!-- Twitter icon link placeholder --> 
+            </div> <!-- End social icons container --> 
+        </div> <!-- End footer column 1 --> 
+
+        <!-- Column 2 --> 
+        <div class="col-md-4 mb-4"> <!-- Footer column for developer credits --> 
+            <h5 class="fw-bold">Developed By:</h5> <!-- Heading for developers list --> 
+                <ul class="list-unstyled mt-2"> <!-- Unstyled list of developers --> 
+                    <li>GIRAY JEROME V.</li> <!-- Developer 1 --> 
+                    <li>QUIZON FR P.</li> <!-- Developer 2 --> 
+                    <li>ACOSTA, RJAY LUIS</li> <!-- Developer 3 --> 
+                    <li>BAL-UT JETRO</li> <!-- Developer 4 --> 
+                </ul> <!-- End developers list --> 
+        </div> <!-- End footer column 2 --> 
+
+        <!-- Column 3 --> 
+        <div class="col-md-4 mb-4"> <!-- Footer column for quick links --> 
+            <h5 class="fw-bold">Quick Links</h5> <!-- Heading for quick links --> 
+                <ul class="list-unstyled mt-2"> <!-- Unstyled list --> 
+                    <li><a href="#cinema" class="footer-link">Cinema</a></li> <!-- Internal link to movie section --> 
+                    <li><a href="character.html" class="footer-link">Characters</a></li> <!-- Link to characters page --> 
+                    <li><a href="products.html" class="footer-link">Products</a></li> <!-- Link to products page --> 
+                </ul> <!-- End quick links list --> 
+        </div> <!-- End footer column 3 --> 
+
+        </div> <!-- End footer row --> 
+
+        <div class="text-center mt-4 text-light"> <!-- Footer copyright row --> 
+        <small>© 2025 Your Website. All Rights Reserved.</small> <!-- Copyright small text --> 
+        </div> <!-- End copyright row --> 
+    </div> <!-- End footer container --> 
+    </footer> <!-- End footer --> 
+
+
+
+<script src="rsc/js/bootstrap.min.js"></script> <!-- Bootstrap JS for components and interactivity --> 
+<script src="rsc/js/script.js"></script> <!-- Custom JS for page behavior (mini player, toggles, etc.) --> 
+</body> <!-- End body --> 
+</html> <!-- End document -->
