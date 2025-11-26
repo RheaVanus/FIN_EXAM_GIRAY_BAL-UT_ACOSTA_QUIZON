@@ -1,0 +1,251 @@
+/* custom navbar styles */
+body{
+    background-color: black;
+}
+.navbar-brand-img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
+}
+.fixed-background-container {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('../../media/ynhero.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.mini-vid {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1050;
+  width: 320px;
+  transition: transform .18s ease, opacity .18s ease;
+  transform: translateY(12px);
+  opacity: 0;
+  pointer-events: none;
+}
+.mini-vid.visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+.mini-vid .card { 
+    transition: transform .18s ease, box-shadow .18s ease; }
+.mini-vid .card:hover {
+     transform: translateY(-6px); box-shadow: 0 14px 40px rgba(0,0,0,0.45); }
+
+
+
+
+/* keep contrast and subtle hover */
+.site-navbar .navbar-brand,
+.site-navbar .nav-link {
+  color: rgba(255,255,255,0.92);
+  font-weight: 500;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus {
+  color: #fff;
+}
+
+/* active highlight */
+.site-navbar .nav-link.active {
+  color: #ffd2d2;
+  font-weight: 600;
+}
+/* custom navbar styles */
+.site-navbar {
+  background-color: #000 !important; /* pure black */
+  border-bottom: 4px solid blue;  /* Bootstrap red variant */
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+}
+
+/* keep contrast and subtle hover */
+.site-navbar .navbar-brand,
+.site-navbar .nav-link {
+  color: rgba(255,255,255,0.92);
+  font-weight: 500;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus {
+  color: blue;
+}
+
+
+  @keyframes appear{
+    from{
+      opacity: 0;
+      scale: 0.5;
+    }
+    to{
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  .jayrome{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+  }
+
+  .thicks {
+  border: 0;
+  height: 6px; /* thickness */
+  background: linear-gradient(90deg, blue); /* red gradient */
+  border-radius: 4px;
+  width: 50%;
+  margin: 1.5rem 0;
+  opacity: 1;
+}
+
+/* Voice Artists section design (Bootstrap used only for layout) */
+.voice-artists {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-top: 1px solid rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.voice-artists .artist-list { display: flex; flex-direction: column; gap: 1rem; }
+
+.voice-artists .artist {
+  padding: .6rem .75rem;
+  border-radius: 10px;
+  transition: background .18s ease, transform .18s ease;
+}
+
+.voice-artists .artist:hover {
+  background: rgba(255,255,255,0.02);
+  transform: translateY(-4px);
+}
+
+.voice-artists .artist-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  overflow: hidden;
+  flex: 0 0 72px;
+  display: inline-block;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+  border: 3px solid rgba(255,255,255,0.03);
+}
+
+.voice-artists .artist-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* text sizing / colour */
+.voice-artists .artist-name {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.voice-artists .artist-role {
+  color: rgba(255,255,255,0.65);
+  font-size: .95rem;
+  margin-top: .2rem;
+}
+
+/* responsive tweaks */
+@media (min-width: 992px) {
+  .voice-artists .artist-avatar { width: 80px; height: 80px; flex: 0 0 80px; }
+  .voice-artists .artist-name { font-size: 1.125rem; }
+}
+
+/* cinema + crew styles */
+.cinema-section { background: transparent; }
+
+/* badges */
+.cinema-badge {
+  background: rgba(255,255,255,0.04);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: .45rem .9rem;
+  border-radius: .5rem;
+  font-weight: 600;
+}
+
+/* media */
+.cinema-media .ratio video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* crew panel */
+.crew-panel {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+/* crew list / avatar */
+.crew-avatar {
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 3px solid rgba(255,255,255,0.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+/* text sizes */
+.crew-name { font-size: 1.06rem; }
+.crew-role { opacity: .75; }
+
+/* custom scrollbar for crew list */
+.crew-list::-webkit-scrollbar { width: 10px; }
+.crew-list::-webkit-scrollbar-track { background: rgba(255,255,255,0.02); border-radius: 6px; }
+.crew-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 6px; }
+
+/* responsive tweaks */
+@media (max-width: 991.98px) {
+  .crew-list { height: 420px !important; }
+  .crew-avatar { width: 56px; height: 56px; }
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+
+/*cHAR*/
+.hero {
+    background: linear-gradient(120deg, rgba(255, 183, 197, 0.08), rgba(193, 223, 255, 0.08));
+    padding: 3rem 0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.hero h1 {
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+@media (max-width: 576px) {
+    .card-img-top { height: 160px; }
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.452);
+    border-radius: 8px;
+    padding: .75rem 1rem;
+}
